@@ -1,6 +1,7 @@
 rootProject.name = "qa-guru-homework"
 include("hw01-git")
 include("hw02-automation-practice-form")
+include("hw03-selenide-first-lesson")
 
 pluginManagement {
     val dependencyManagement: String by settings
