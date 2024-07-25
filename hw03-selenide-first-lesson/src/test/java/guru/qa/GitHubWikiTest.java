@@ -1,3 +1,5 @@
+package guru.qa;
+
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selectors.byText;
@@ -33,7 +35,7 @@ class GitHubWikiTest {
                   void test() {
                     Configuration.assertionMode = SOFT;
                     open("page.html");
-                                
+
                     $("#first").should(visible).click();
                     $("#second").should(visible).click();
                   }
