@@ -23,7 +23,7 @@ class GitHubEnterpriseTest {
     }
 
     @Test
-    void enterprisePageOpenTest() throws InterruptedException {
+    void enterprisePageOpenTest() {
         open("/");
         $(byTagAndText("button", "Solutions")).hover();
         $(".HeaderMenu").$(byTagAndText("a", "Enterprise")).click();
