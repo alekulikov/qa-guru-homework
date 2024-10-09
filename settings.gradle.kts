@@ -1,4 +1,5 @@
 rootProject.name = "qa-guru-homework"
+include("hw01-git")
 
 pluginManagement {
     val dependencyManagement: String by settings
