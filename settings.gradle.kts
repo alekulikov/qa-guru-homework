@@ -1,5 +1,6 @@
 rootProject.name = "qa-guru-homework"
 include("hw01-git")
+include("hw02-automation-practice-form")
 
 pluginManagement {
     val dependencyManagement: String by settings
@@ -14,4 +15,3 @@ pluginManagement {
         id("com.diffplug.spotless") version spotless
     }
 }
-include("hw01-git")
