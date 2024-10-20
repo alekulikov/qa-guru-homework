@@ -28,7 +28,6 @@ allprojects {
     val springframeworkBoot: String by project
     val jupiter: String by project
     val selenide: String by project
-    val webdrivermanager: String by project
 
     plugins.apply("io.spring.dependency-management")
     dependencyManagement {
@@ -39,11 +38,16 @@ allprojects {
             }
 
             dependency("com.codeborne:selenide:$selenide")
-            dependency("io.github.bonigarcia:webdrivermanager:$webdrivermanager")
         }
 
         configurations.all {
             resolutionStrategy {
+                eachDependency {
+                    if (requested.group == "org.seleniumhq.selenium") {
+                        useVersion("4.21.0")
+                    }
+                }
+
                 failOnVersionConflict()
 
                 force("com.google.guava:guava:31.1-jre")
