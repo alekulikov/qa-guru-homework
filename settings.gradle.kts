@@ -3,6 +3,7 @@ include("hw01-git")
 include("hw02-automation-practice-form")
 include("hw03-selenide-first-lesson")
 include("hw04-selenide-second-lesson")
+include("hw05-java-first-lesson")
 
 pluginManagement {
     val dependencyManagement: String by settings
