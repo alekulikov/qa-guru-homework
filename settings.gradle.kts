@@ -4,6 +4,7 @@ include("hw02-automation-practice-form")
 include("hw03-selenide-first-lesson")
 include("hw04-selenide-second-lesson")
 include("hw05-java-first-lesson")
+include("hw06-automation-practice-form-pageobject")
 
 pluginManagement {
     val dependencyManagement: String by settings
